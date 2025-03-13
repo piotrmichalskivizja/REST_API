@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladVS2022\\",
+  "WorkspaceRootPath": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladvs2022\\wykladvs2022\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladvs2022\\wykladvs2022\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,24 +24,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Person.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladVS2022\\WykladVS2022\\Models\\Person.cs",
+              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Models\\Person.cs",
               "RelativeDocumentMoniker": "WykladVS2022\\Models\\Person.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladVS2022\\WykladVS2022\\Models\\Person.cs",
+              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Models\\Person.cs",
               "RelativeToolTip": "WykladVS2022\\Models\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T09:37:54.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T09:37:54.697Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PersonsController.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs",
+              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs",
               "RelativeDocumentMoniker": "WykladVS2022\\Controllers\\PersonsController.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs",
-              "RelativeToolTip": "WykladVS2022\\Controllers\\PersonsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs*",
+              "RelativeToolTip": "WykladVS2022\\Controllers\\PersonsController.cs*",
+              "ViewState": "AgIAAE0AAAAAAAAAAAA6wFQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T09:29:30.465Z",
               "EditorCaption": ""

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+using System.Xml.Serialization;
 using WykladVS2022.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,10 +15,69 @@ namespace WykladVS2022.Controllers
         [HttpGet]
         public IEnumerable<Person> Get()
         {
-            return new Person[] {
-                new Person { Id = 1, Name = "Jan", Surname= "Kowalski" },
-                new Person { Id = 2, Name = "Stanisław", Surname = "Nowaka" }
-                };                      
+            string fileNameXML = "dane.xml";
+            string fileNameJson = "dane.json";
+
+            List<Person>? results = new List<Person>();
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Person>));
+
+            #region Wersja 1 z TRY
+            //using (TextReader reader = new StreamReader(fileName))
+            //{
+            //    try
+            //    {
+            //        results = (List<Person>)serializer.Deserialize(reader);
+            //    }
+            //    catch (Exception)
+            //    {
+            //        throw;
+            //    }
+            //}
+            #endregion
+
+            #region Wersja 2 z AS
+            //using (TextReader reader = new StreamReader(fileName))
+            //{
+            //    object o = serializer.Deserialize(reader);
+
+            //    results = o as List<Person>;
+            //}
+            #endregion
+
+            #region Wersja 3 z AS + TRY
+            //using (TextReader reader = new StreamReader(fileName))
+            //{
+            //    object? o;
+            //    try
+            //    {
+            //        o = serializer.Deserialize(reader);
+            //    }
+            //    catch (Exception)
+            //    {
+            //        throw;
+            //    }
+
+            //    results = o as List<Person>;
+            //}
+            #endregion
+
+            #region Wersja 4 - po przeniesieniu odczytu do metody
+            //results = ReadPersonFromXML(fileNameXML);
+            #endregion
+
+            #region Wersja 5 - Json
+            results = ReadPersonFromJSON(fileNameJson);
+            #endregion
+
+            //reader.Close(); // Ponieważ użyto "using"
+
+            return results;
+
+            //return new Person[] {
+            //    new Person { Id = 1, Name = "Jan", Surname= "Kowalski" },
+            //    new Person { Id = 2, Name = "Stanisław", Surname = "Nowaka" }
+            //    };
         }
 
         // GET api/<PersonController>/5
@@ -28,9 +89,23 @@ namespace WykladVS2022.Controllers
 
         // POST api/<PersonController>
         [HttpPost]
-        public string Post([FromBody] string value)
+        public void Post([FromBody] List<Person> list)
         {
-            return value.ToString();
+            string fileNameXML = "dane.xml";
+            string fileNameJson = "dane.json";
+            
+
+            //List<Person> persons = ReadPersonFromXML(fileNameXML);
+            List<Person> persons = ReadPersonFromJSON(fileNameJson);
+
+            foreach (Person person in list) 
+            {
+                persons.Add(person);
+            }
+            
+            //WritePersonToXML(fileNameXML, persons);
+            WritePersonToJson(fileNameJson, persons);
+            
         }
 
         // PUT api/<PersonController>/5
@@ -43,6 +118,79 @@ namespace WykladVS2022.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        private List<Person> ReadPersonFromXML(string fileName)
+        {
+            List<Person> results = new List<Person>();
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Person>));
+
+            using (TextReader reader = new StreamReader(fileName))
+            {
+                object? o;
+                try
+                {
+                    o = serializer.Deserialize(reader);
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                
+                results = o as List<Person>;
+            }
+            return results;
+        }
+
+        private void WritePersonToXML(string fileName, List<Person> list)
+        {
+            XmlSerializer serializer = new XmlSerializer (typeof(List<Person>));
+            using(TextWriter writer = new StreamWriter(fileName))
+            {
+                try
+                {
+                    serializer.Serialize(writer, list);
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
+
+        private void WritePersonToJson(string fileName, List<Person> list)
+        {
+            using(TextWriter writer = new StreamWriter(fileName))
+            {
+                try
+                {
+                    string jsonText = JsonSerializer.Serialize(list);
+                    writer.Write(jsonText);
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
+
+        private List<Person> ReadPersonFromJSON(string fileName)
+        {
+            List<Person>? results = new List<Person>();
+            string jsonText = System.IO.File.ReadAllText(fileName);
+
+            using (TextReader reader = new StreamReader(fileName))
+            {
+                try
+                {
+                    results = JsonSerializer.Deserialize<List<Person>>(jsonText);
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+            return results;
         }
     }
 }
