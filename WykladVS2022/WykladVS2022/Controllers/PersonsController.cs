@@ -82,9 +82,30 @@ namespace WykladVS2022.Controllers
 
         // GET api/<PersonController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Person Get(int id)
         {
-            return "value";
+            string fileNameJson = "dane.json";
+            List<Person>? results = ReadPersonFromJSON(fileNameJson);
+            Person returnValue = null;
+
+            #region Forma "dawna" - ale ok
+            //for (int i = 0; i < results.Count; i++)
+            //{
+            //    if (results[i].Id == id)
+            //    {
+            //        returnValue = results[i];
+            //        break;
+            //    }
+            //}
+            #endregion
+
+            #region Forma współczena - optymalna
+
+            returnValue = results.Where(p => p.Id == id).First();
+            
+            #endregion
+
+            return returnValue;
         }
 
         // POST api/<PersonController>
@@ -112,6 +133,17 @@ namespace WykladVS2022.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
+            /*
+             * Aktualizacja tylko wybranych pól - tych które się zmieniły
+             * - zwiększone obciążenie obliczeniowe => musimy sprawdzić które pola się 
+             *      zmieniły
+             * + zmiejszenie ilości danych przesyłanych przez sieć
+             *      
+             * Aktualizacja całego obiektu - wzięcie nowego
+             * + Zmiejszone obciążenie obliczeniowe => nie musimy sprawdzić które pola się 
+             *      zmieniły
+             * - Zwiększenie ilości danych przesyłanych przez sieć
+             */
         }
 
         // DELETE api/<PersonController>/5
