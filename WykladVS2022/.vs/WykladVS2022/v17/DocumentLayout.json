@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1738E1FE-CF31-45E7-8DE3-DD687342E588}|ClassLibraryEntity\\ClassLibraryEntity.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\classlibraryentity\\entitymodel\\bazawykladowa.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{1738E1FE-CF31-45E7-8DE3-DD687342E588}|ClassLibraryEntity\\ClassLibraryEntity.csproj|solutionrelative:classlibraryentity\\entitymodel\\bazawykladowa.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\exceptions\\personexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\exceptions\\personexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\exceptions\\modelsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\exceptions\\modelsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\exceptions\\wykladexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\exceptions\\wykladexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3228C92-AE95-41C6-A587-E39D74A2F428}|WykladWersjaKlasyczna\\WykladWersjaKlasyczna.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladwersjaklasyczna\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3228C92-AE95-41C6-A587-E39D74A2F428}|WykladWersjaKlasyczna\\WykladWersjaKlasyczna.csproj|solutionrelative:wykladwersjaklasyczna\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonException.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Exceptions\\PersonException.cs",
-              "RelativeDocumentMoniker": "WykladVS2022\\Exceptions\\PersonException.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Exceptions\\PersonException.cs",
-              "RelativeToolTip": "WykladVS2022\\Exceptions\\PersonException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
+              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:31:31.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModelsException.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Exceptions\\ModelsException.cs",
-              "RelativeDocumentMoniker": "WykladVS2022\\Exceptions\\ModelsException.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Exceptions\\ModelsException.cs",
-              "RelativeToolTip": "WykladVS2022\\Exceptions\\ModelsException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:29:33.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WykladException.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Exceptions\\WykladException.cs",
-              "RelativeDocumentMoniker": "WykladVS2022\\Exceptions\\WykladException.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Exceptions\\WykladException.cs",
-              "RelativeToolTip": "WykladVS2022\\Exceptions\\WykladException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:18:06.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Person.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Models\\Person.cs",
-              "RelativeDocumentMoniker": "WykladVS2022\\Models\\Person.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Models\\Person.cs",
-              "RelativeToolTip": "WykladVS2022\\Models\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T09:37:54.697Z",
+              "WhenOpened": "2025-04-03T08:49:17.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonsController.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs",
-              "RelativeDocumentMoniker": "WykladVS2022\\Controllers\\PersonsController.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs",
-              "RelativeToolTip": "WykladVS2022\\Controllers\\PersonsController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAgwG0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T09:29:30.465Z",
-              "EditorCaption": ""
+              "Title": "BazaWykladowa.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx",
+              "RelativeDocumentMoniker": "ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx",
+              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx [Diagram1]",
+              "RelativeToolTip": "ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-04-03T08:37:57.857Z",
+              "EditorCaption": " [Diagram1]"
             }
           ]
         }

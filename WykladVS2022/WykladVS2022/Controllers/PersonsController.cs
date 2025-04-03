@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ClassLibraryEntity.EntityModel;
+using Microsoft.AspNetCore.Mvc;
+using System.Data.Common;
 using System.Text.Json;
 using System.Xml.Serialization;
 using WykladVS2022.Models;
@@ -15,62 +17,86 @@ namespace WykladVS2022.Controllers
         [HttpGet]
         public IEnumerable<Person> Get()
         {
-            string fileNameXML = "dane.xml";
-            string fileNameJson = "dane.json";
+            #region Operacje plikowe
+            //string fileNameXML = "dane.xml";
+            //string fileNameJson = "dane.json";
+
+            //List<Person>? results = new List<Person>();
+
+            //XmlSerializer serializer = new XmlSerializer(typeof(List<Person>));
+
+            //#region Wersja 1 z TRY
+            ////using (TextReader reader = new StreamReader(fileName))
+            ////{
+            ////    try
+            ////    {
+            ////        results = (List<Person>)serializer.Deserialize(reader);
+            ////    }
+            ////    catch (Exception)
+            ////    {
+            ////        throw;
+            ////    }
+            ////}
+            //#endregion
+
+            //#region Wersja 2 z AS
+            ////using (TextReader reader = new StreamReader(fileName))
+            ////{
+            ////    object o = serializer.Deserialize(reader);
+
+            ////    results = o as List<Person>;
+            ////}
+            //#endregion
+
+            //#region Wersja 3 z AS + TRY
+            ////using (TextReader reader = new StreamReader(fileName))
+            ////{
+            ////    object? o;
+            ////    try
+            ////    {
+            ////        o = serializer.Deserialize(reader);
+            ////    }
+            ////    catch (Exception)
+            ////    {
+            ////        throw;
+            ////    }
+
+            ////    results = o as List<Person>;
+            ////}
+            //#endregion
+
+            //#region Wersja 4 - po przeniesieniu odczytu do metody
+            ////results = ReadPersonFromXML(fileNameXML);
+            //#endregion
+
+            //#region Wersja 5 - Json
+            //results = ReadPersonFromJSON(fileNameJson);
+            //#endregion
+
+            ////reader.Close(); // Ponieważ użyto "using"
+
+            #endregion
+
+
+            Wyklad2025RestStacjonarneEntities1 entities1 =
+                new Wyklad2025RestStacjonarneEntities1();
+
+            DbProviderFactories.RegisterFactory("System.Data.SqlClient", System.Data.SqlClient.SqlClientFactory.Instance);
+
+
+            var osobylyList = entities1.osoby.ToList();
 
             List<Person>? results = new List<Person>();
 
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Person>));
-
-            #region Wersja 1 z TRY
-            //using (TextReader reader = new StreamReader(fileName))
-            //{
-            //    try
-            //    {
-            //        results = (List<Person>)serializer.Deserialize(reader);
-            //    }
-            //    catch (Exception)
-            //    {
-            //        throw;
-            //    }
-            //}
-            #endregion
-
-            #region Wersja 2 z AS
-            //using (TextReader reader = new StreamReader(fileName))
-            //{
-            //    object o = serializer.Deserialize(reader);
-
-            //    results = o as List<Person>;
-            //}
-            #endregion
-
-            #region Wersja 3 z AS + TRY
-            //using (TextReader reader = new StreamReader(fileName))
-            //{
-            //    object? o;
-            //    try
-            //    {
-            //        o = serializer.Deserialize(reader);
-            //    }
-            //    catch (Exception)
-            //    {
-            //        throw;
-            //    }
-
-            //    results = o as List<Person>;
-            //}
-            #endregion
-
-            #region Wersja 4 - po przeniesieniu odczytu do metody
-            //results = ReadPersonFromXML(fileNameXML);
-            #endregion
-
-            #region Wersja 5 - Json
-            results = ReadPersonFromJSON(fileNameJson);
-            #endregion
-
-            //reader.Close(); // Ponieważ użyto "using"
+            foreach (var o in osobylyList)
+            {
+                Person person = new Person()
+                {
+                    Id = o.id_osoby,
+                    Name = o.imie,
+                    Surname = o.nazwisko
+                };
+            }
 
             return results;
 

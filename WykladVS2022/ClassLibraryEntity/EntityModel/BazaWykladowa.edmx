@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Wyklad2025RestStacjonarneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="moduly">
+          <Key>
+            <PropertyRef Name="id_moduly" />
+          </Key>
+          <Property Name="id_moduly" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nazwa_modulu" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="osoby">
+          <Key>
+            <PropertyRef Name="id_osoby" />
+          </Key>
+          <Property Name="id_osoby" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="imie" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="nazwisko" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Wyklad2025RestStacjonarne.dbo.v_osoby' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="v_osoby">
+          <Key>
+            <PropertyRef Name="imie" />
+            <PropertyRef Name="nazwisko" />
+          </Key>
+          <Property Name="imie" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="nazwisko" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Wyklad2025RestStacjonarne.dbo.v_osoby2' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="v_osoby2">
+          <Key>
+            <PropertyRef Name="id_osoby" />
+          </Key>
+          <Property Name="id_osoby" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="imie" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="nazwisko" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Wyklad2025RestStacjonarneModelStoreContainer">
+          <EntitySet Name="moduly" EntityType="Self.moduly" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="osoby" EntityType="Self.osoby" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="v_osoby" EntityType="Self.v_osoby" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [v_osoby].[imie] AS [imie], 
+    [v_osoby].[nazwisko] AS [nazwisko]
+    FROM [dbo].[v_osoby] AS [v_osoby]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="v_osoby2" EntityType="Self.v_osoby2" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [v_osoby2].[id_osoby] AS [id_osoby], 
+    [v_osoby2].[imie] AS [imie], 
+    [v_osoby2].[nazwisko] AS [nazwisko]
+    FROM [dbo].[v_osoby2] AS [v_osoby2]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Wyklad2025RestStacjonarneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="moduly">
+          <Key>
+            <PropertyRef Name="id_moduly" />
+          </Key>
+          <Property Name="id_moduly" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nazwa_modulu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Wyklad2025RestStacjonarneEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="moduly" EntityType="Self.moduly" />
+          <EntitySet Name="osoby" EntityType="Wyklad2025RestStacjonarneModel.osoby" />
+          <EntitySet Name="v_osoby" EntityType="Wyklad2025RestStacjonarneModel.v_osoby" />
+          <EntitySet Name="v_osoby2" EntityType="Wyklad2025RestStacjonarneModel.v_osoby2" />
+        </EntityContainer>
+        <EntityType Name="osoby">
+          <Key>
+            <PropertyRef Name="id_osoby" />
+          </Key>
+          <Property Name="id_osoby" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="imie" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="nazwisko" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="v_osoby">
+          <Key>
+            <PropertyRef Name="imie" />
+            <PropertyRef Name="nazwisko" />
+          </Key>
+          <Property Name="imie" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="nazwisko" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="v_osoby2">
+          <Key>
+            <PropertyRef Name="id_osoby" />
+          </Key>
+          <Property Name="id_osoby" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="imie" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="nazwisko" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Wyklad2025RestStacjonarneModelStoreContainer" CdmEntityContainer="Wyklad2025RestStacjonarneEntities1">
+          <EntitySetMapping Name="moduly">
+            <EntityTypeMapping TypeName="Wyklad2025RestStacjonarneModel.moduly">
+              <MappingFragment StoreEntitySet="moduly">
+                <ScalarProperty Name="id_moduly" ColumnName="id_moduly" />
+                <ScalarProperty Name="nazwa_modulu" ColumnName="nazwa_modulu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="osoby">
+            <EntityTypeMapping TypeName="Wyklad2025RestStacjonarneModel.osoby">
+              <MappingFragment StoreEntitySet="osoby">
+                <ScalarProperty Name="nazwisko" ColumnName="nazwisko" />
+                <ScalarProperty Name="imie" ColumnName="imie" />
+                <ScalarProperty Name="id_osoby" ColumnName="id_osoby" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_osoby">
+            <EntityTypeMapping TypeName="Wyklad2025RestStacjonarneModel.v_osoby">
+              <MappingFragment StoreEntitySet="v_osoby">
+                <ScalarProperty Name="nazwisko" ColumnName="nazwisko" />
+                <ScalarProperty Name="imie" ColumnName="imie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_osoby2">
+            <EntityTypeMapping TypeName="Wyklad2025RestStacjonarneModel.v_osoby2">
+              <MappingFragment StoreEntitySet="v_osoby2">
+                <ScalarProperty Name="nazwisko" ColumnName="nazwisko" />
+                <ScalarProperty Name="imie" ColumnName="imie" />
+                <ScalarProperty Name="id_osoby" ColumnName="id_osoby" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
