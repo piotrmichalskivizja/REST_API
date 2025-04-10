@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1738E1FE-CF31-45E7-8DE3-DD687342E588}|ClassLibraryEntity\\ClassLibraryEntity.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\classlibraryentity\\entitymodel\\bazawykladowa.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{1738E1FE-CF31-45E7-8DE3-DD687342E588}|ClassLibraryEntity\\ClassLibraryEntity.csproj|solutionrelative:classlibraryentity\\entitymodel\\bazawykladowa.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3228C92-AE95-41C6-A587-E39D74A2F428}|WykladWersjaKlasyczna\\WykladWersjaKlasyczna.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladwersjaklasyczna\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3228C92-AE95-41C6-A587-E39D74A2F428}|WykladWersjaKlasyczna\\WykladWersjaKlasyczna.csproj|solutionrelative:wykladwersjaklasyczna\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\class\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\class\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|d:\\vizja\\letni 2024-2025\\tworzenie us\u0142ug sieciowych rest\\wyk\u0142ad 2025\\wykladstacjonarny\\rest_api\\wykladvs2022\\wykladvs2022\\class\\personlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07315797-7C49-449B-AFFA-7334FB164598}|WykladVS2022\\WykladVS2022.csproj|solutionrelative:wykladvs2022\\class\\personlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ValuesController.cs",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
-              "RelativeDocumentMoniker": "WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
-              "RelativeToolTip": "WykladWersjaKlasyczna\\Controllers\\ValuesController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PersonList.cs",
+              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Class\\PersonList.cs",
+              "RelativeDocumentMoniker": "WykladVS2022\\Class\\PersonList.cs",
+              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Class\\PersonList.cs",
+              "RelativeToolTip": "WykladVS2022\\Class\\PersonList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T08:49:17.678Z",
+              "WhenOpened": "2025-04-10T08:28:01.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Class\\Token.cs",
+              "RelativeDocumentMoniker": "WykladVS2022\\Class\\Token.cs",
+              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Class\\Token.cs",
+              "RelativeToolTip": "WykladVS2022\\Class\\Token.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T08:16:12.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BazaWykladowa.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx",
-              "RelativeDocumentMoniker": "ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx",
-              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx [Diagram1]",
-              "RelativeToolTip": "ClassLibraryEntity\\EntityModel\\BazaWykladowa.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-04-03T08:37:57.857Z",
-              "EditorCaption": " [Diagram1]"
+              "Title": "PersonsController.cs",
+              "DocumentMoniker": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs",
+              "RelativeDocumentMoniker": "WykladVS2022\\Controllers\\PersonsController.cs",
+              "ToolTip": "D:\\VIZJA\\Letni 2024-2025\\Tworzenie us\u0142ug sieciowych REST\\Wyk\u0142ad 2025\\WykladStacjonarny\\REST_API\\WykladVS2022\\WykladVS2022\\Controllers\\PersonsController.cs",
+              "RelativeToolTip": "WykladVS2022\\Controllers\\PersonsController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAmwJYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T08:14:41.76Z",
+              "EditorCaption": ""
             }
           ]
         }

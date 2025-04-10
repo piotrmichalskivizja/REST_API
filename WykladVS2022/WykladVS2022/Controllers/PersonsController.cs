@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Data.Common;
 using System.Text.Json;
 using System.Xml.Serialization;
+using WykladVS2022.Class;
 using WykladVS2022.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -136,8 +137,20 @@ namespace WykladVS2022.Controllers
 
         // POST api/<PersonController>
         [HttpPost]
-        public void Post([FromBody] List<Person> list)
+        public IActionResult Post([FromBody] PersonList personList)
         {
+            string token = personList.Token;
+            Token tokenObject = Token.OdczytajToken(token);
+            //Osobny kontroler do autoryzacji
+            if (tokenObject == null || 
+                tokenObject.DataWaznosciTokenu < DateTime.Now ||
+                !PersonHasPrivilage(tokenObject, Privilage.ManipulateUser))
+            {
+                return BadRequest();
+            }
+            
+
+
             string fileNameXML = "dane.xml";
             string fileNameJson = "dane.json";
             
@@ -145,14 +158,20 @@ namespace WykladVS2022.Controllers
             //List<Person> persons = ReadPersonFromXML(fileNameXML);
             List<Person> persons = ReadPersonFromJSON(fileNameJson);
 
-            foreach (Person person in list) 
+            foreach (Person person in personList.PersonsList) 
             {
                 persons.Add(person);
             }
             
             //WritePersonToXML(fileNameXML, persons);
             WritePersonToJson(fileNameJson, persons);
-            
+            return Ok();
+        }
+
+        private bool PersonHasPrivilage(Token tokenObject, Privilage manipulateUser)
+        {
+            //Sprawdzamy czy użytkownik ma uprawnienia do operacji
+            return true;
         }
 
         // PUT api/<PersonController>/5
@@ -250,5 +269,13 @@ namespace WykladVS2022.Controllers
             }
             return results;
         }
+
+        enum Privilage
+        {
+            GetUser,
+            ManipulateUser
+
+        }
     }
+
 }
